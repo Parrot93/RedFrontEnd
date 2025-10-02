@@ -10,7 +10,7 @@ import { HiOutlineDocumentText } from "react-icons/hi2";
 import { LuHandshake } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
 
-export default function MySidebar() {
+export default function SidebarComponent() {
   return (
     <Sidebar aria-label="Sidebar" className="h-full">
       <SidebarLogo
@@ -32,7 +32,7 @@ export default function MySidebar() {
             )}
           </NavLink>
 
-          <NavLink to="/policy">
+          <NavLink to="/policy/1">
             {({ isActive }) => (
               <SidebarItem
                 icon={HiOutlineDocumentText}
@@ -43,7 +43,7 @@ export default function MySidebar() {
             )}
           </NavLink>
 
-          <NavLink to="/consents">
+          <NavLink to="/consents/1">
             {({ isActive }) => (
               <SidebarItem
                 icon={LuHandshake}

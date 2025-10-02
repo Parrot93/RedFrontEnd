@@ -1,8 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Provider from "./routes/providers.jsx";
-
-
+import EditableTable from "./routes/consents.jsx"
+import ProviderTable from './routes/providerTable.jsx';
+import PolicyTable from './routes/policyTable.jsx';
+import ConsentTable from './routes/consentTable.jsx';
 import './index.css'
 import {
   createBrowserRouter,
@@ -17,8 +19,12 @@ const router = createBrowserRouter([
     element: <Root />,
     children :[{
     path: "provider/:contactId",
-    element: <Provider />,
-  }]
+    element: <ProviderTable/>,
+  },{path: "policy/:contactId",
+    element: <PolicyTable />,},
+    {path: "consents/:contactId",
+    element: <ConsentTable />,}
+  ]
   },
   
 ]);

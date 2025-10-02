@@ -1,9 +1,9 @@
-import MySidebar from "./sidebar";
+import Sidebar from "./SidebarComponent.jsx";
 
 function App() {
   return (
      <div className="flex h-screen">
-      <MySidebar />
+      <Sidebar />
       <main className="flex-grow p-4">
         {/* contenuto */}
       </main>
